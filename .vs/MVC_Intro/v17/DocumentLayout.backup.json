@@ -1,0 +1,173 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\student\\desktop\\carcenter\\mvc_intro\\mvc_intro\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\student\\desktop\\carcenter\\mvc_intro\\mvc_intro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\student\\desktop\\carcenter\\mvc_intro\\mvc_intro\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\student\\desktop\\carcenter\\mvc_intro\\mvc_intro\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\student\\desktop\\carcenter\\mvc_intro\\mvc_intro\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\student\\desktop\\carcenter\\mvc_intro\\mvc_intro\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\student\\desktop\\carcenter\\mvc_intro\\mvc_intro\\mvc_intro.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\mvc_intro.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\student\\desktop\\carcenter\\mvc_intro\\mvc_intro\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\student\\desktop\\carcenter\\mvc_intro\\mvc_intro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Views\\_ViewImports.cshtml*",
+              "RelativeToolTip": "MVC_Intro\\Views\\_ViewImports.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T06:49:41.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Views\\Blog\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Views\\Blog\\Index.cshtml",
+              "RelativeToolTip": "MVC_Intro\\Views\\Blog\\Index.cshtml",
+              "ViewState": "AgIAAEsAAAAAAAAAAADgv10AAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T06:10:38.148Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Controllers\\BlogController.cs",
+              "RelativeDocumentMoniker": "MVC_Intro\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Controllers\\BlogController.cs",
+              "RelativeToolTip": "MVC_Intro\\Controllers\\BlogController.cs",
+              "ViewState": "AgIAAAYAAADwa/7jTngRwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T06:08:44.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MVC_Intro\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T05:56:42.3Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Views\\Shared\\_Layout.cshtml*",
+              "RelativeToolTip": "MVC_Intro\\Views\\Shared\\_Layout.cshtml*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T05:20:31.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MVC_Intro\\Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T05:19:09.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MVC_Intro\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MVC_Intro\\Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T05:18:23.492Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MVC_Intro",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj",
+              "RelativeDocumentMoniker": "MVC_Intro\\MVC_Intro.csproj",
+              "ToolTip": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj",
+              "RelativeToolTip": "MVC_Intro\\MVC_Intro.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-12-24T05:13:26.527Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Program.cs",
+              "RelativeDocumentMoniker": "MVC_Intro\\Program.cs",
+              "ToolTip": "C:\\Users\\student\\Desktop\\CarCenter\\MVC_Intro\\MVC_Intro\\Program.cs",
+              "RelativeToolTip": "MVC_Intro\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T05:08:45.744Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
