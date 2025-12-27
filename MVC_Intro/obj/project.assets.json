@@ -7355,11 +7355,19 @@
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\MVC_Intro.csproj",
       "projectName": "MVC_Intro",
       "projectPath": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\MVC_Intro.csproj",
       "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro777\\MVC_Intro\\MVC_Intro.csproj",
+      "projectName": "MVC_Intro",
+      "projectPath": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro777\\MVC_Intro\\MVC_Intro.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro777\\MVC_Intro\\obj\\",
+>>>>>>> 29f292c7cab4d53afdf4e687928e88b6a354ed05
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

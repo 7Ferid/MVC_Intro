@@ -1,8 +1,14 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "oHeHAJpHZco=",
   "success": true,
   "projectFilePath": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\MVC_Intro.csproj",
+=======
+  "dgSpecHash": "U1emVs3TIqU=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro777\\MVC_Intro\\MVC_Intro.csproj",
+>>>>>>> 29f292c7cab4d53afdf4e687928e88b6a354ed05
   "expectedPackageFiles": [
     "C:\\Users\\Asus\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\Asus\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",
