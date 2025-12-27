@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj": {}
+    "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\MVC_Intro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj": {
+    "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\MVC_Intro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\MVC_Intro.csproj",
         "projectName": "MVC_Intro",
-        "projectPath": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj",
+        "projectPath": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\MVC_Intro.csproj",
         "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro\\MVC_Intro\\obj\\",
+        "outputPath": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -57,6 +57,10 @@
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.22, )"
+            },
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
               "target": "Package",
               "version": "[8.0.22, )"
             }

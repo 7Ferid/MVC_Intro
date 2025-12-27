@@ -15,6 +15,14 @@ namespace MVC_Intro
             });
             var app = builder.Build();
             app.UseStaticFiles();
+            app.UseRouting();
+          
+                app.MapControllerRoute(
+                  name: "areas",
+                  pattern: "{area:exists}/{controller=Dashboard}/{action=Index}/{id?}"
+                );
+          
+
             app.MapDefaultControllerRoute();
 
             

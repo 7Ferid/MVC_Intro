@@ -15,7 +15,7 @@ namespace MVC_Intro.Controllers
             var sliders=_context.Sliders.ToList();
             //ViewBag.Sliders = sliders;
 
-            return View();
+            return View(sliders);
         }
     }
 }

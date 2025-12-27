@@ -1,61 +1,57 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\",
+  "WorkspaceRootPath": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Migrations\\20251227135133_AddedSliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:MVC_Intro\\Migrations\\20251227135133_AddedSliders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\areas\\admin\\views\\slider\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\areas\\admin\\controllers\\slidercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\areas\\admin\\views\\slider\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\areas\\admin\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\models\\slider.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\contexts\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\migrations\\20251227120016_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\migrations\\20251227120016_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\views\\blog\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\areas\\admin\\views\\dashboard\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\controllers\\blogcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro\\mvc_intro\\mvc_intro.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|c:\\users\\asus\\source\\repos\\mvc_intro17\\mvc_intro\\mvc_intro.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{6633B4DA-EE3D-4362-BC64-FC98F20579BB}|MVC_Intro\\MVC_Intro.csproj|solutionrelative:mvc_intro\\mvc_intro.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     }
   ],
@@ -66,7 +62,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -81,29 +77,103 @@
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20251227135133_AddedSliders.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Migrations\\20251227135133_AddedSliders.cs",
-              "RelativeDocumentMoniker": "MVC_Intro\\Migrations\\20251227135133_AddedSliders.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Migrations\\20251227135133_AddedSliders.cs",
-              "RelativeToolTip": "MVC_Intro\\Migrations\\20251227135133_AddedSliders.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T13:51:33.413Z",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "RelativeToolTip": "MVC_Intro\\Areas\\Admin\\Views\\Slider\\Create.cshtml",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAwB8AAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T19:15:48.195Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MVC_Intro\\Areas\\Admin\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T18:13:19.038Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "RelativeToolTip": "MVC_Intro\\Areas\\Admin\\Views\\Slider\\Index.cshtml",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAABsAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T18:11:32.753Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SliderController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeDocumentMoniker": "MVC_Intro\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "RelativeToolTip": "MVC_Intro\\Areas\\Admin\\Controllers\\SliderController.cs",
+              "ViewState": "AgIAACcAAAAAAAAAAAAUwDEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-27T18:07:23.199Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MVC_Intro\\Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T06:49:41.733Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Program.cs",
+              "RelativeDocumentMoniker": "MVC_Intro\\Program.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Program.cs",
+              "RelativeToolTip": "MVC_Intro\\Program.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAowAwAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-24T05:08:45.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Areas\\Admin\\Views\\DashBoard\\Index.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Areas\\Admin\\Views\\DashBoard\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Areas\\Admin\\Views\\DashBoard\\Index.cshtml",
+              "RelativeToolTip": "MVC_Intro\\Areas\\Admin\\Views\\DashBoard\\Index.cshtml",
+              "ViewState": "AgIAAPMCAAAAAAAAAAAwwAsDAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-27T16:40:29.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Slider.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Models\\Slider.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Models\\Slider.cs",
               "RelativeDocumentMoniker": "MVC_Intro\\Models\\Slider.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Models\\Slider.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Models\\Slider.cs",
               "RelativeToolTip": "MVC_Intro\\Models\\Slider.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -112,89 +182,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MVC_Intro\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MVC_Intro\\Controllers\\HomeController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T05:18:23.492Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MVC_Intro\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MVC_Intro\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAEYAAAAAAAAAAAAwwE4AAAAGAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-24T05:19:09.642Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "MVC_Intro\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "MVC_Intro\\Views\\_ViewImports.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-24T06:49:41.733Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Contexts\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "MVC_Intro\\Contexts\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Contexts\\AppDbContext.cs",
-              "RelativeToolTip": "MVC_Intro\\Contexts\\AppDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T07:12:23.06Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "20251227120016_Init.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Migrations\\20251227120016_Init.cs",
-              "RelativeDocumentMoniker": "MVC_Intro\\Migrations\\20251227120016_Init.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Migrations\\20251227120016_Init.cs",
-              "RelativeToolTip": "MVC_Intro\\Migrations\\20251227120016_Init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-27T12:00:17.361Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\appsettings.json",
-              "RelativeDocumentMoniker": "MVC_Intro\\appsettings.json",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\appsettings.json",
-              "RelativeToolTip": "MVC_Intro\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAB6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-12-27T11:51:12.547Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Views\\Blog\\Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Views\\Blog\\Index.cshtml",
               "RelativeDocumentMoniker": "MVC_Intro\\Views\\Blog\\Index.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Views\\Blog\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Views\\Blog\\Index.cshtml",
               "RelativeToolTip": "MVC_Intro\\Views\\Blog\\Index.cshtml",
               "ViewState": "AgIAAEsAAAAAAAAAAADgv10AAABKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
@@ -203,68 +195,51 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 9,
               "Title": "BlogController.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Controllers\\BlogController.cs",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Controllers\\BlogController.cs",
               "RelativeDocumentMoniker": "MVC_Intro\\Controllers\\BlogController.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Controllers\\BlogController.cs",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Controllers\\BlogController.cs",
               "RelativeToolTip": "MVC_Intro\\Controllers\\BlogController.cs",
               "ViewState": "AgIAAAYAAAD8mv+4E14zwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T06:08:44.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T06:08:44.106Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Program.cs",
-              "RelativeDocumentMoniker": "MVC_Intro\\Program.cs",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Program.cs",
-              "RelativeToolTip": "MVC_Intro\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-24T05:08:45.744Z",
-              "EditorCaption": ""
+              "DocumentIndex": 10,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MVC_Intro\\Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-12-24T05:56:42.3Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 11,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "MVC_Intro\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "MVC_Intro\\Views\\_ViewStart.cshtml",
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "MVC_Intro\\Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro17\\MVC_Intro\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "MVC_Intro\\Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-24T05:56:42.3Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T05:20:31.38Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MVC_Intro\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\Asus\\source\\repos\\MVC_Intro\\MVC_Intro\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MVC_Intro\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-12-24T05:20:31.38Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
               "Title": "MVC_Intro.csproj",
-              "DocumentMoniker": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj",
+              "DocumentMoniker": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\MVC_Intro.csproj",
               "RelativeDocumentMoniker": "MVC_Intro\\MVC_Intro.csproj",
-              "ToolTip": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj",
+              "ToolTip": "C:\\Users\\Asus\\Source\\Repos\\MVC_Intro17\\MVC_Intro\\MVC_Intro.csproj",
               "RelativeToolTip": "MVC_Intro\\MVC_Intro.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-12-24T05:13:26.527Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-12-24T05:13:26.527Z"
             }
           ]
         }
