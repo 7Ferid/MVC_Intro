@@ -1,3 +1,6 @@
+using Microsoft.EntityFrameworkCore;
+using MVC_Intro.Contexts;
+
 namespace MVC_Intro
 {
     public class Program
@@ -6,6 +9,10 @@ namespace MVC_Intro
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddControllersWithViews();
+            builder.Services.AddDbContext<AppDbContext>(option =>
+            {
+                option.UseSqlServer(builder.Configuration.GetConnectionString("Default"));
+            });
             var app = builder.Build();
             app.UseStaticFiles();
             app.MapDefaultControllerRoute();
