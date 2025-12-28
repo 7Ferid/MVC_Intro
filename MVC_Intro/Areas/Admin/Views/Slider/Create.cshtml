@@ -1,13 +1,13 @@
-﻿@model Slider
+﻿@model  Slider
 
 <div class="container"> 
     <div class="row">
       
   
-<form method="post" asp-action="Create" asp-controller="Slider">
+<form method="post" asp-action="Create" asp-controller="Slider" enctype="multipart/form-data">
     <div class="form-group">
-        <label for="LogoUrl">LogoUrl</label>
-        <input asp-for="LogoUrl" class="form-control" id="logourl"  placeholder="LogoUrl">
+        <label for="Logo">Logo</label>
+        <input asp-for="Logo" class="form-control" id="Logo"  placeholder="LogoUrl">
         <span class="text-danger" asp-validation-for="LogoUrl"></span>
        
     </div>

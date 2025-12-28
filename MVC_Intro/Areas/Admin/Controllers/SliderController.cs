@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.Build.Framework;
 using Microsoft.EntityFrameworkCore;
 using MVC_Intro.Contexts;
 using MVC_Intro.Models;
@@ -7,7 +8,7 @@ namespace MVC_Intro.Areas.Admin.Controllers
 {
     [Area("Admin")]
     [AutoValidateAntiforgeryToken]
-    public class SliderController(AppDbContext _context) : Controller
+    public class SliderController(AppDbContext _context, IWebHostEnvironment enviroment) : Controller
     {
         //private readonly AppDbContext _context;
 
@@ -15,6 +16,7 @@ namespace MVC_Intro.Areas.Admin.Controllers
         //{
         //    _context = context;
         //}
+        private readonly IWebHostEnvironment _enviroment;
 
         public async Task<IActionResult> IndexAsync()
         {
@@ -32,10 +34,21 @@ namespace MVC_Intro.Areas.Admin.Controllers
         public async Task<IActionResult> Create(Slider slider)
         {
 
-            //if(!ModelState.IsValid)
-            // {
-            //     return View();
-            // }
+            if (!ModelState.IsValid)
+            {
+                return View();
+            }
+            if (slider.Logo.ContentType.Contains("image"))
+            {
+                ModelState.AddModelError("Logo", "File type must be image");
+                return View(slider);
+            }
+            if (slider.Logo.Length > 2 * 1024 * 1024)
+            {
+                ModelState.AddModelError("Logo", "Image size must be max 2MB");
+                return View(slider);
+
+            }
 
             //var isExist= await _context.Sliders.AnyAsync(x=>x.Title==slider.Title);
             //   if(isExist)
@@ -43,6 +56,12 @@ namespace MVC_Intro.Areas.Admin.Controllers
             //      ModelState.AddModelError("Title", "This title already exist");
             //      return View();
             // }
+            string uniqueFileName = Guid.NewGuid().ToString() + slider.Logo.FileName;
+
+            string imageFolderPath = $@"{_enviroment.WebRootPath}\assets\images\website-images\{uniqueFileName}";
+            using FileStream stream = new(imageFolderPath, FileMode.Create);
+            await slider.Logo.CopyToAsync(stream);
+            slider.LogoUrl = uniqueFileName;
 
 
 
@@ -86,5 +105,7 @@ namespace MVC_Intro.Areas.Admin.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+
+
     }
 }
