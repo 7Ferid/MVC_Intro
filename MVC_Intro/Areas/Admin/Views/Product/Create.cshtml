@@ -1,0 +1,59 @@
+﻿@model Product
+
+<div class="container">
+    <div class="row">
+        <h2>Create product </h2>
+
+        <form method="post"  >
+            <div class="form-group">
+                <label for="title"Name</label>
+                <input asp-for="Name" class="form-control" id="title" placeholder="Name">
+                <span class="text-danger" asp-validation-for="Name"></span>
+
+            </div>
+
+           
+
+            <div class="form-group">
+                <label for="Description">Description</label>
+                <input asp-for="Description" class="form-control" id="description" placeholder="Description">
+                <span class="text-danger" asp-validation-for="Description"></span>
+
+            </div>
+            <div class="form-group">
+                <label for="ImagePath">ImagePath</label>
+                <input asp-for="ImagePath" class="form-control" id="ImagePath" placeholder="ImagePath">
+                <span class="text-danger" asp-validation-for="ImagePath"></span>
+
+
+            </div>
+            <div class="form-group">
+                <label for="Price">Price</label>
+                <input asp-for="Price" class="form-control" id="Price" placeholder="Price>
+                <span class="text-danger" asp-validation-for="Price"></span>
+
+
+            </div>
+            <div class="form-group">
+                <label for="CategoryId">Select Category</label>
+                <select asp-for="CategoryId" id="CategoryId">
+                    <option value="null" disabled selected>Select Category</option>
+                    @foreach(var category in ViewBag.Categories)
+                    {
+                        <option value="@category.Id">@category.Name</option>
+                    }
+)
+                </select>
+               
+                
+                <span class="text-danger" asp-validation-for="Price"></span>
+
+
+            </div>
+
+
+            <button type="submit" class="btn btn-primary">Submit</button>
+            <button asp-action="Index" class="btn btn-secondary">Cancel</button>
+        </form>
+    </div>
+</div>

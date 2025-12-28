@@ -6,6 +6,7 @@ using MVC_Intro.Models;
 namespace MVC_Intro.Areas.Admin.Controllers
 {
     [Area("Admin")]
+    [AutoValidateAntiforgeryToken]
     public class SliderController(AppDbContext _context) : Controller
     {
         //private readonly AppDbContext _context;
@@ -27,6 +28,7 @@ namespace MVC_Intro.Areas.Admin.Controllers
         }
 
         [HttpPost]
+        //[ValidateAntiForgeryToken]
         public async Task<IActionResult> Create(Slider slider)
         {
 

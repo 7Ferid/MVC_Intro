@@ -1,0 +1,1 @@
+﻿global using MVC_Intro.Models;

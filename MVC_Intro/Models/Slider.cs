@@ -1,10 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using MVC_Intro.Models.Common;
+using System.ComponentModel.DataAnnotations;
 
 namespace MVC_Intro.Models
 {
-    public class Slider
+    public class Slider:Basentity
     {
-        public int Id { get; set; }
+      
        
         [Required(ErrorMessage ="Logo bos ola bilmez")]
         public string LogoUrl { get; set; }=null!;
