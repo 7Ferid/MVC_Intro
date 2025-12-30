@@ -18,6 +18,11 @@ namespace MVC_Intro.ViewModels.ProductViewModels
 
         public IFormFile MainImage { get; set; }
         public IFormFile HoverImage { get; set; }
+
+
+        [Required]
+        [Range(0, 5)]
+        public int ReytingCount { get; set; }   
         public List<IFormFile>? Images { get; set; }
     }
 }

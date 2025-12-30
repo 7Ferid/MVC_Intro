@@ -40,7 +40,7 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 return View(vm);
             }
 
-            if (vm.MainImage.ContentType.Contains("image")){
+            if (!vm.MainImage.ContentType.Contains("image")){
                 ModelState.AddModelError("MainImage", "File type must be image");
                 return View(vm);
             }
@@ -49,7 +49,7 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 ModelState.AddModelError("MainImage", "Image size must be max 2MB");
                 return View(vm);
             }
-            if (vm.HoverImage.ContentType.Contains("image"))
+            if (!vm.HoverImage.ContentType.Contains("image"))
             {
                 ModelState.AddModelError("HoverImage", "File type must be image");
                 return View(vm);
@@ -60,16 +60,16 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 return View(vm);
             }
             string uniqueMainFileName = Guid.NewGuid().ToString() + vm.MainImage.FileName;
-            string mainImagePath =@$"{_envoriement.WebRootPath}/assets/images/website-images/{uniqueMainFileName}";
+            string mainImagePath =Path.Combine( _envoriement.WebRootPath, "assets", "images", "website-images", uniqueMainFileName);
 
             using FileStream mainStream = new FileStream(mainImagePath, FileMode.Create);
            await  vm.MainImage.CopyToAsync(mainStream);
 
 
             string uniqueHoverFileName = Guid.NewGuid().ToString() + vm.HoverImage.FileName;
-            string hoverImagePath = @$"{_envoriement.WebRootPath}/assets/images/website-images/{uniqueHoverFileName}";
+            string hoverImagePath = Path.Combine(_envoriement.WebRootPath, "assets", "images", "website-images", uniqueHoverFileName);
 
-            using FileStream hoverStream = new FileStream(mainImagePath, FileMode.Create);
+            using FileStream hoverStream = new FileStream(hoverImagePath, FileMode.Create);
             await vm.HoverImage.CopyToAsync(hoverStream);
 
 
@@ -80,13 +80,15 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 Price = vm.Price,
                 CategoryId = vm.CategoryId,
                 MainImagePath = uniqueMainFileName,
-                HoverImagePath= uniqueHoverFileName
+                HoverImagePath= uniqueHoverFileName,
+                ReytingCount = vm.ReytingCount
+
             };
 
 
             await _context.Products.AddAsync(product);
               await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(IndexAsync));
+            return RedirectToAction(nameof(Index));
         }
         [HttpGet]
         public  async Task<IActionResult> Update(int id)
@@ -122,8 +124,33 @@ namespace MVC_Intro.Areas.Admin.Controllers
             existProduct.CategoryId = product.CategoryId;
             _context.Products.Update(existProduct);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(IndexAsync));
+            return RedirectToAction(nameof(Index));
         }
+        [HttpGet]
+        public async Task<IActionResult> Delete(int id)
+        {
+            var product = await _context.Products.FindAsync(id);
+            if (product is null)
+                return NotFound();
+            _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
+
+            string folderpath=Path.Combine(_envoriement.WebRootPath, "assets", "images", "website-images");
+            string mainImagePath = Path.Combine(folderpath, product.MainImagePath);
+            string hoverImagePath = Path.Combine(folderpath, product.HoverImagePath);
+            if (System.IO.File.Exists(mainImagePath))
+            {
+                System.IO.File.Delete(mainImagePath);
+            }
+            if (System.IO.File.Exists(hoverImagePath))
+            {
+                System.IO.File.Delete(hoverImagePath);
+            }
+
+
+            return RedirectToAction("Index");
+        }
+
         private async Task SendCategoriesWithViewBag()
         {
             var categories = await _context.Categories.ToListAsync();
