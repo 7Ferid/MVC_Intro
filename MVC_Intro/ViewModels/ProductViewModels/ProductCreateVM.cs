@@ -25,6 +25,7 @@ namespace MVC_Intro.ViewModels.ProductViewModels
         public int ReytingCount { get; set; }   
         public List<IFormFile>? Images { get; set; }
     }
+
 }
-   
+
 

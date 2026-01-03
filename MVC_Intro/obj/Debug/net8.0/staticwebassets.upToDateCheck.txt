@@ -1009,6 +1009,7 @@ wwwroot\assets\images\website-images\1-7-270x300.jpg
 wwwroot\assets\images\website-images\1-8-270x300.jpg
 wwwroot\assets\images\website-images\1-9-270x300.jpg
 wwwroot\assets\images\website-images\1.png
+wwwroot\assets\images\website-images\14265486-eb58-4eb0-98e1-6f32fe38e00dСнимок экрана 2025-12-20 232438.png
 wwwroot\assets\images\website-images\2-1-370x270.webp
 wwwroot\assets\images\website-images\2-1-70x78.png
 wwwroot\assets\images\website-images\2-2-370x270.webp
@@ -1016,8 +1017,7 @@ wwwroot\assets\images\website-images\2-2-70x78.png
 wwwroot\assets\images\website-images\2-3-70x78.png
 wwwroot\assets\images\website-images\2.png
 wwwroot\assets\images\website-images\3.png
-wwwroot\assets\images\website-images\74504e5d-3647-4682-9c4d-cf367c147c56Снимок экрана 2025-11-24 224516.png
-wwwroot\assets\images\website-images\c1cb2113-1fec-4fc6-a428-6e084dd836dfСнимок экрана 2025-11-24 224516.png
+wwwroot\assets\images\website-images\995bd193-3b07-48d3-a9d5-3aefb7d3162dСнимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\car.png
 wwwroot\assets\images\website-images\card.png
 wwwroot\assets\images\website-images\dark.png

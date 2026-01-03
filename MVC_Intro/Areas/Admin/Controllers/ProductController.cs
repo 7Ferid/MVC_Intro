@@ -2,6 +2,7 @@
 using Microsoft.Build.Construction;
 using Microsoft.EntityFrameworkCore;
 using MVC_Intro.Contexts;
+using MVC_Intro.Helpers;
 using MVC_Intro.Models;
 using MVC_Intro.ViewModels.ProductViewModels;
 using System.Threading.Tasks;
@@ -26,9 +27,9 @@ namespace MVC_Intro.Areas.Admin.Controllers
         public async Task<IActionResult> Create(ProductCreateVM vm)
         {
 
-          
+         
             if (!ModelState.IsValid)
-            {  await SendCategoriesWithViewBag();
+            {   await SendCategoriesWithViewBag();
                 return View(vm);
             }
             var isExistCategory= await _context.Categories.AnyAsync(x=>x.Id==vm.CategoryId);
@@ -40,21 +41,21 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 return View(vm);
             }
 
-            if (!vm.MainImage.ContentType.Contains("image")){
+            if (!vm.MainImage.CheckType()){
                 ModelState.AddModelError("MainImage", "File type must be image");
                 return View(vm);
             }
-            if (vm.MainImage.Length > 2 * 1024 * 1024)
+            if (vm.MainImage.CheckSize(2))
             {
                 ModelState.AddModelError("MainImage", "Image size must be max 2MB");
                 return View(vm);
             }
-            if (!vm.HoverImage.ContentType.Contains("image"))
+            if (!vm.HoverImage.CheckType())
             {
                 ModelState.AddModelError("HoverImage", "File type must be image");
                 return View(vm);
             }
-            if (vm.HoverImage.Length > 2 * 1024 * 1024)
+            if (vm.HoverImage.CheckSize(2))
             {
                 ModelState.AddModelError("HoverImage", "Image size must be max 2MB");
                 return View(vm);
@@ -99,29 +100,86 @@ namespace MVC_Intro.Areas.Admin.Controllers
 
             await SendCategoriesWithViewBag();
 
-            return View(product);
+            ProductUpdateVM vm=new ProductUpdateVM()
+            {
+                Id=product.Id,
+                Name=product.Name,
+                Description=product.Description,
+                Price=product.Price,
+                CategoryId=product.CategoryId,
+                ReytingCount=product.ReytingCount,
+                MainImagePath=product.MainImagePath,
+                HoverImagePath=product.HoverImagePath
+            };
+
+            return View(vm);
         }
         [HttpPost]
-        public async Task<IActionResult> Update( Product product)
+        public async Task<IActionResult> Update( ProductUpdateVM vm)
         {
             if (!ModelState.IsValid)
             {
                 await SendCategoriesWithViewBag();
-                return View(product);
+                return View(vm);
             }
-            var existProduct = await _context.Products.FindAsync(product.Id);
+            if (!vm.MainImage?.CheckType() ?? false)
+            {
+                ModelState.AddModelError("MainImage", "File type must be image");
+                return View(vm);
+            }
+            if (vm.MainImage?.CheckSize(2) ?? false)
+            {
+                ModelState.AddModelError("MainImage", "Image size must be max 2MB");
+                return View(vm);
+            }
+            if (!vm.HoverImage?.CheckType() ?? false)
+            {
+                ModelState.AddModelError("HoverImage", "File type must be image");
+                return View(vm);
+            }
+            if (vm.HoverImage?.CheckSize(2) ?? false)
+            {
+                ModelState.AddModelError("HoverImage", "Image size must be max 2MB");
+                return View(vm);
+            }
+
+
+            var existProduct = await _context.Products.FindAsync(vm.Id);
             if (existProduct is null)
                 return BadRequest();
-            var isExistCategory = await _context.Categories.AnyAsync(x => x.Id == product.CategoryId);
+            var isExistCategory = await _context.Categories.AnyAsync(x => x.Id == vm.CategoryId);
             if (!isExistCategory)
             {
                 await SendCategoriesWithViewBag();
                 ModelState.AddModelError("CategoryId", "This category does not exist");
-                return View(product);
+                return View(vm);
             }
-            existProduct.Name = product.Name;
-            existProduct.Price = product.Price;
-            existProduct.CategoryId = product.CategoryId;
+            existProduct.Name = vm.Name;
+            existProduct.Price = vm.Price;
+            existProduct.CategoryId = vm.CategoryId;
+
+            string folderPath = Path.Combine(_envoriement.WebRootPath, "assets", "images", "website-images");
+
+            if (vm.MainImage is { })
+            {
+                string newMainImagePath = await vm.MainImage.SaveFileAsync(folderPath);
+                string existingMainImagePath = Path.Combine(folderPath, existProduct.MainImagePath);
+                ExtensionMethods.DeleteFile(existingMainImagePath);
+                existProduct.MainImagePath = newMainImagePath;
+
+            }
+            if (vm.HoverImage is { })
+            {
+                string newHoverImagePath = await vm.HoverImage.SaveFileAsync(folderPath);
+                string existingHoverImagePath = Path.Combine(folderPath, existProduct.HoverImagePath);
+                ExtensionMethods.DeleteFile(existingHoverImagePath);
+                existProduct.MainImagePath = newHoverImagePath;
+
+            }
+
+
+
+
             _context.Products.Update(existProduct);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
