@@ -30,6 +30,7 @@ namespace MVC_Intro.ViewModels.ProductViewModels
         public string? MainImagePath { get; set; } 
         public string? HoverImagePath { get; set; }
         public List<string>? AdditionalImagePaths { get; set; } = [];
+        public List<int>? AdditionalImageIds { get; set; } = [];
 
 
     }

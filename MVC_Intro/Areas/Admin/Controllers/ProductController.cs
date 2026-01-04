@@ -174,7 +174,7 @@ namespace MVC_Intro.Areas.Admin.Controllers
         [HttpGet]
         public  async Task<IActionResult> Update(int id)
         {
-            var product = await _context.Products.Include(x=>x.ProductTags).FirstOrDefaultAsync(x=>x.Id==id);
+            var product = await _context.Products.Include(x=>x.ProductTags).Include(x=>x.ProductImages).FirstOrDefaultAsync(x=>x.Id==id);
             if (product is null)
                 return NotFound();
 
@@ -191,7 +191,9 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 MainImagePath=product.MainImagePath,
                 HoverImagePath=product.HoverImagePath,
                 TagIds=product.ProductTags.Select(x=>x.TagId).ToList(),
-                AdditionalImagePaths=  _context.ProductImages.Select(x=>x.ImagePath).ToList()
+                AdditionalImagePaths=  product.ProductImages.Select(x=>x.ImagePath).ToList(),
+                AdditionalImageIds=    product.ProductImages.Select(x=>x.Id).ToList()
+
             };
 
             return View(vm);
@@ -237,9 +239,23 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 ModelState.AddModelError("HoverImage", "Image size must be max 2MB");
                 return View(vm);
             }
+            foreach (var image in vm.Images ?? [])
+            {
+                if (!image.CheckType())
+                {
+                    ModelState.AddModelError("Images", "File type must be image");
+                    return View(vm);
+                }
+                if (image.CheckSize(2))
+                {
+                    ModelState.AddModelError("Images", "Image size must be max 2MB");
+                    return View(vm);
+                }
+            }
 
 
-            var existProduct = await _context.Products.Include(x=>x.ProductTags).FirstOrDefaultAsync(x=>x.Id==vm.Id);
+
+            var existProduct = await _context.Products.Include(x=>x.ProductTags).Include(x=>x.ProductImages).FirstOrDefaultAsync(x=>x.Id==vm.Id);
             if (existProduct is null)
                 return BadRequest();
             var isExistCategory = await _context.Categories.AnyAsync(x => x.Id == vm.CategoryId);
@@ -282,6 +298,28 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 ExtensionMethods.DeleteFile(existingHoverImagePath);
                 existProduct.MainImagePath = newHoverImagePath;
 
+            }
+            var existImages=existProduct.ProductImages.ToList();
+            foreach(var image in existImages)
+            {
+                var isExistImageId=vm.AdditionalImageIds?.Any(x=>x==image.Id)?? false;
+                if (!isExistImageId)
+                {
+                    string deletedImagePath = Path.Combine(folderPath, image.ImagePath);
+                    ExtensionMethods.DeleteFile(deletedImagePath);//bu serverden silir
+                    existProduct.ProductImages.Remove(image);  //bu DB den silir  
+
+                }
+            }
+            foreach (var image in vm.Images)
+            {
+                string uniqueFilePath = await image.SaveFileAsync(folderPath);
+                ProductImage productImage = new()
+                {
+                    ImagePath = uniqueFilePath,
+                    ProductdId = existProduct.Id
+                };
+                existProduct.ProductImages.Add(productImage);
             }
 
 
