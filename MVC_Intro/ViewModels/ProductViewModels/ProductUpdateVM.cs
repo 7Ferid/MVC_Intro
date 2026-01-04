@@ -29,6 +29,8 @@ namespace MVC_Intro.ViewModels.ProductViewModels
         public List<IFormFile>? Images { get; set; }
         public string? MainImagePath { get; set; } 
         public string? HoverImagePath { get; set; }
+        public List<string>? AdditionalImagePaths { get; set; } = [];
+
 
     }
 

@@ -17,14 +17,14 @@ namespace MVC_Intro.ViewModels.ProductViewModels
         public int CategoryId { get; set; }
         public List<int> TagIds { get; set; }
 
-        public IFormFile MainImage { get; set; }
-        public IFormFile HoverImage { get; set; }
+        public IFormFile MainImage { get; set; } = null!;
+        public IFormFile HoverImage { get; set; } = null!;
 
 
         [Required]
         [Range(0, 5)]
-        public int ReytingCount { get; set; }   
-        public List<IFormFile>? Images { get; set; }
+        public int ReytingCount { get; set; }
+        public List<IFormFile> Images { get; set; } = [];
     }
 
 }

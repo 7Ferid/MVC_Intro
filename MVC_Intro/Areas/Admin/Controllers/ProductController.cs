@@ -96,6 +96,23 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 ModelState.AddModelError("HoverImage", "Image size must be max 2MB");
                 return View(vm);
             }
+            foreach(var image in vm.Images)
+            {
+                if (!image.CheckType())
+                {
+                    ModelState.AddModelError("Images", "File type must be image");
+                    return View(vm);
+                }
+                if (image.CheckSize(2))
+                {
+                    ModelState.AddModelError("Images", "Image size must be max 2MB");
+                    return View(vm);
+                }
+            }
+
+            string folderPath = Path.Combine(_envoriement.WebRootPath, "assets", "images", "website-images");
+
+/*
             string uniqueMainFileName = Guid.NewGuid().ToString() + vm.MainImage.FileName;
             string mainImagePath =Path.Combine( _envoriement.WebRootPath, "assets", "images", "website-images", uniqueMainFileName);
 
@@ -107,7 +124,11 @@ namespace MVC_Intro.Areas.Admin.Controllers
             string hoverImagePath = Path.Combine(_envoriement.WebRootPath, "assets", "images", "website-images", uniqueHoverFileName);
 
             using FileStream hoverStream = new FileStream(hoverImagePath, FileMode.Create);
-            await vm.HoverImage.CopyToAsync(hoverStream);
+            await vm.HoverImage.CopyToAsync(hoverStream);*/
+
+
+        string uniqueMainFileName = await vm.MainImage.SaveFileAsync(folderPath);
+        string uniqueHoverFileName = await vm.HoverImage.SaveFileAsync(folderPath);
 
 
             Product product = new()
@@ -119,10 +140,23 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 MainImagePath = uniqueMainFileName,
                 HoverImagePath= uniqueHoverFileName,
                 ReytingCount = vm.ReytingCount,
-                ProductTags = []
+                ProductTags = [],
+                ProductImages = []
 
             };
-            foreach(var tagId in vm.TagIds)
+            foreach(var image in vm.Images)
+            {
+                string uniqueFilePath = await image.SaveFileAsync(folderPath);
+                ProductImage productImage = new()
+                {
+                    ImagePath = uniqueFilePath,
+                    Product = product
+                };
+                product.ProductImages.Add(productImage);
+            }
+
+
+            foreach (var tagId in vm.TagIds)
             {
                 ProductTag productTag = new()
                 {
@@ -156,7 +190,8 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 ReytingCount=product.ReytingCount,
                 MainImagePath=product.MainImagePath,
                 HoverImagePath=product.HoverImagePath,
-                TagIds=product.ProductTags.Select(x=>x.TagId).ToList()
+                TagIds=product.ProductTags.Select(x=>x.TagId).ToList(),
+                AdditionalImagePaths=  _context.ProductImages.Select(x=>x.ImagePath).ToList()
             };
 
             return View(vm);
@@ -259,7 +294,7 @@ namespace MVC_Intro.Areas.Admin.Controllers
         [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.Products.Include(x=>x.ProductImages).FirstOrDefaultAsync(x=>x.Id==id);
             if (product is null)
                 return NotFound();
             _context.Products.Remove(product);
@@ -275,6 +310,12 @@ namespace MVC_Intro.Areas.Admin.Controllers
             if (System.IO.File.Exists(hoverImagePath))
             {
                 System.IO.File.Delete(hoverImagePath);
+            }
+            foreach(var productImage in product.ProductImages)
+            {
+                string imagePath = Path.Combine(folderpath, productImage.ImagePath);
+                ExtensionMethods.DeleteFile(imagePath);
+
             }
 
 
@@ -294,7 +335,8 @@ namespace MVC_Intro.Areas.Admin.Controllers
                     CategoryName=product.Category.Name,
                     MainImagePath=product.MainImagePath,
                     HoverImagePath=product.HoverImagePath,
-                    TagNames=product.ProductTags.Select(x=>x.Tag.Name).ToList()
+                    TagNames=product.ProductTags.Select(x=>x.Tag.Name).ToList(),
+                    AdditionalImagePaths=product.ProductImages.Select(x=>x.ImagePath).ToList()
 
 
             }).FirstOrDefaultAsync(x=>x.Id==id);

@@ -1017,7 +1017,12 @@ wwwroot\assets\images\website-images\2-2-70x78.png
 wwwroot\assets\images\website-images\2-3-70x78.png
 wwwroot\assets\images\website-images\2.png
 wwwroot\assets\images\website-images\3.png
+wwwroot\assets\images\website-images\65ca3638-6550-40f0-b7b0-13b5244ecc38Снимок экрана 2025-11-24 224516.png
+wwwroot\assets\images\website-images\8a3fcc6a-73b8-4e99-a51d-e681d98d4ee9Снимок экрана 2025-11-24 224516.png
+wwwroot\assets\images\website-images\9079ce0a-07cd-4527-af37-df7eb9ff3331Снимок экрана 2025-11-24 224516.png
+wwwroot\assets\images\website-images\9249a331-6a3f-4c84-8054-268bdd967a23Снимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\995bd193-3b07-48d3-a9d5-3aefb7d3162dСнимок экрана 2025-11-24 224516.png
+wwwroot\assets\images\website-images\9d6393c9-d5d4-49c0-aa47-206cb309412eСнимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\car.png
 wwwroot\assets\images\website-images\card.png
 wwwroot\assets\images\website-images\dark.png
@@ -1071,5 +1076,3 @@ wwwroot\assets\scss\_slider.scss
 wwwroot\assets\scss\_testimonial.scss
 wwwroot\assets\scss\_variables.scss
 wwwroot\assets\scss\_wishlist.scss
-wwwroot\assets\images\website-images\65ca3638-6550-40f0-b7b0-13b5244ecc38Снимок экрана 2025-11-24 224516.png
-wwwroot\assets\images\website-images\9249a331-6a3f-4c84-8054-268bdd967a23Снимок экрана 2025-11-24 224516.png
