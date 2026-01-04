@@ -23,6 +23,7 @@ namespace MVC_Intro.Models
         public string HoverImagePath { get; set; }
 
         public ICollection<ProductImage> ProductImages { get; set; } = [];
+        public ICollection<ProductTag> ProductTags { get; set; } = [];
         [Required]
         [Range(0,5)]
         public int ReytingCount { get; set; }

@@ -1071,3 +1071,5 @@ wwwroot\assets\scss\_slider.scss
 wwwroot\assets\scss\_testimonial.scss
 wwwroot\assets\scss\_variables.scss
 wwwroot\assets\scss\_wishlist.scss
+wwwroot\assets\images\website-images\65ca3638-6550-40f0-b7b0-13b5244ecc38Снимок экрана 2025-11-24 224516.png
+wwwroot\assets\images\website-images\9249a331-6a3f-4c84-8054-268bdd967a23Снимок экрана 2025-11-24 224516.png

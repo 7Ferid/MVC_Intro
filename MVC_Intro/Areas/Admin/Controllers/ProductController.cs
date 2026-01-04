@@ -14,12 +14,38 @@ namespace MVC_Intro.Areas.Admin.Controllers
     {
         public async Task<IActionResult> IndexAsync()
         {
-            var products = await _context.Products.Include(x => x.Category).ToListAsync();
-            return View(products);
+            List<ProductGetVM> vm = await _context.Products.Include(x => x.Category)
+                .Select(product=>new ProductGetVM()
+                {
+                    Id = product.Id,
+                    Name = product.Name,
+                    Description = product.Description,
+                    Price = product.Price,
+                    CategoryName = product.Category.Name,
+                    MainImagePath = product.MainImagePath,
+                    HoverImagePath = product.HoverImagePath
+                }).ToListAsync();
+           /* List<ProductGetVM> vms = new();
+            foreach (var product in products)
+            {
+                ProductGetVM vm = new() { 
+                    Id = product.Id,
+                    Name = product.Name,
+                    Description = product.Description,
+                    Price = product.Price,
+                    CategoryName = product.Category.Name,
+                    MainImagePath = product.MainImagePath,
+                    HoverImagePath = product.HoverImagePath
+
+                };
+                vms.Add(vm);
+
+            }*/
+            return View(vm);
         }
         public async Task<IActionResult> Create()
         {
-            await SendCategoriesWithViewBag();
+            await SendItemsWithViewBag();
 
             return View();
         }
@@ -29,16 +55,26 @@ namespace MVC_Intro.Areas.Admin.Controllers
 
          
             if (!ModelState.IsValid)
-            {   await SendCategoriesWithViewBag();
+            {   await SendItemsWithViewBag();
                 return View(vm);
             }
             var isExistCategory= await _context.Categories.AnyAsync(x=>x.Id==vm.CategoryId);
 
             if(!isExistCategory)
             {
-                await SendCategoriesWithViewBag();
+                await SendItemsWithViewBag();
                 ModelState.AddModelError("CategoryId", "This category does not exist");
                 return View(vm);
+            }
+            foreach(var tagId in vm.TagIds)
+            {
+                var isExistTag = await _context.Tags.AnyAsync(x => x.Id == tagId);
+                if (!isExistTag)
+                {
+                    await SendItemsWithViewBag();
+                    ModelState.AddModelError("TagIds", $"Tag with Id {tagId} does not exist");
+                    return View(vm);
+                }
             }
 
             if (!vm.MainImage.CheckType()){
@@ -82,9 +118,19 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 CategoryId = vm.CategoryId,
                 MainImagePath = uniqueMainFileName,
                 HoverImagePath= uniqueHoverFileName,
-                ReytingCount = vm.ReytingCount
+                ReytingCount = vm.ReytingCount,
+                ProductTags = []
 
             };
+            foreach(var tagId in vm.TagIds)
+            {
+                ProductTag productTag = new()
+                {
+                    TagId = tagId,
+                    Product = product
+                };
+                product.ProductTags.Add(productTag);
+            }
 
 
             await _context.Products.AddAsync(product);
@@ -94,11 +140,11 @@ namespace MVC_Intro.Areas.Admin.Controllers
         [HttpGet]
         public  async Task<IActionResult> Update(int id)
         {
-            var product = await _context.Products.FindAsync(id);
+            var product = await _context.Products.Include(x=>x.ProductTags).FirstOrDefaultAsync(x=>x.Id==id);
             if (product is null)
                 return NotFound();
 
-            await SendCategoriesWithViewBag();
+            await SendItemsWithViewBag();
 
             ProductUpdateVM vm=new ProductUpdateVM()
             {
@@ -109,7 +155,8 @@ namespace MVC_Intro.Areas.Admin.Controllers
                 CategoryId=product.CategoryId,
                 ReytingCount=product.ReytingCount,
                 MainImagePath=product.MainImagePath,
-                HoverImagePath=product.HoverImagePath
+                HoverImagePath=product.HoverImagePath,
+                TagIds=product.ProductTags.Select(x=>x.TagId).ToList()
             };
 
             return View(vm);
@@ -119,9 +166,22 @@ namespace MVC_Intro.Areas.Admin.Controllers
         {
             if (!ModelState.IsValid)
             {
-                await SendCategoriesWithViewBag();
+                await SendItemsWithViewBag();
                 return View(vm);
             }
+            foreach (var tagId in vm.TagIds)
+            {
+                var isExistTag = await _context.Tags.AnyAsync(x => x.Id == tagId);
+                if (!isExistTag)
+                {
+                    await SendItemsWithViewBag();
+                    ModelState.AddModelError("TagIds", $"Tag with Id {tagId} does not exist");
+                    return View(vm);
+                }
+            }
+
+
+
             if (!vm.MainImage?.CheckType() ?? false)
             {
                 ModelState.AddModelError("MainImage", "File type must be image");
@@ -144,19 +204,31 @@ namespace MVC_Intro.Areas.Admin.Controllers
             }
 
 
-            var existProduct = await _context.Products.FindAsync(vm.Id);
+            var existProduct = await _context.Products.Include(x=>x.ProductTags).FirstOrDefaultAsync(x=>x.Id==vm.Id);
             if (existProduct is null)
                 return BadRequest();
             var isExistCategory = await _context.Categories.AnyAsync(x => x.Id == vm.CategoryId);
             if (!isExistCategory)
             {
-                await SendCategoriesWithViewBag();
+                await SendItemsWithViewBag();
                 ModelState.AddModelError("CategoryId", "This category does not exist");
                 return View(vm);
             }
             existProduct.Name = vm.Name;
+            existProduct.Description = vm.Description;
             existProduct.Price = vm.Price;
             existProduct.CategoryId = vm.CategoryId;
+            existProduct.ProductTags = [];
+            foreach(var tagId in vm.TagIds)
+            {
+                ProductTag productTag = new()
+                {
+                    TagId = tagId,
+                    ProductId = existProduct.Id
+                };
+                existProduct.ProductTags.Add(productTag);
+            }
+
 
             string folderPath = Path.Combine(_envoriement.WebRootPath, "assets", "images", "website-images");
 
@@ -209,10 +281,34 @@ namespace MVC_Intro.Areas.Admin.Controllers
             return RedirectToAction("Index");
         }
 
-        private async Task SendCategoriesWithViewBag()
+        public async Task<IActionResult> Detail(int id)
+        {
+            var product = await _context.Products.Include(x=>x.Category).Select(product=>   new ProductGetVM()
+            {
+             
+                
+                    Id=product.Id,
+                    Name=product.Name,
+                    Description=product.Description,
+                    Price=product.Price,
+                    CategoryName=product.Category.Name,
+                    MainImagePath=product.MainImagePath,
+                    HoverImagePath=product.HoverImagePath,
+                    TagNames=product.ProductTags.Select(x=>x.Tag.Name).ToList()
+
+
+            }).FirstOrDefaultAsync(x=>x.Id==id);
+            if (product is null)
+                return NotFound();
+            return View(product);
+        }
+
+        private async Task SendItemsWithViewBag()
         {
             var categories = await _context.Categories.ToListAsync();
             ViewBag.Categories = categories;
+            var tags= await _context.Tags.ToListAsync();
+            ViewBag.Tags = tags;
         }
     }
 }
