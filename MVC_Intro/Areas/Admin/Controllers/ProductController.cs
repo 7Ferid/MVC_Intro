@@ -23,7 +23,8 @@ namespace MVC_Intro.Areas.Admin.Controllers
                     Price = product.Price,
                     CategoryName = product.Category.Name,
                     MainImagePath = product.MainImagePath,
-                    HoverImagePath = product.HoverImagePath
+                    HoverImagePath = product.HoverImagePath,
+                    ReytingCount=product.ReytingCount
                 }).ToListAsync();
            /* List<ProductGetVM> vms = new();
             foreach (var product in products)
@@ -374,7 +375,8 @@ namespace MVC_Intro.Areas.Admin.Controllers
                     MainImagePath=product.MainImagePath,
                     HoverImagePath=product.HoverImagePath,
                     TagNames=product.ProductTags.Select(x=>x.Tag.Name).ToList(),
-                    AdditionalImagePaths=product.ProductImages.Select(x=>x.ImagePath).ToList()
+                    AdditionalImagePaths=product.ProductImages.Select(x=>x.ImagePath).ToList(),
+                    ReytingCount=product.ReytingCount
 
 
             }).FirstOrDefaultAsync(x=>x.Id==id);

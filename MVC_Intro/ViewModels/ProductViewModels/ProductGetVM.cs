@@ -11,6 +11,8 @@
         public string HoverImagePath { get; set; }=string.Empty;
         public List<string> TagNames { get; set; } = [];
         public List<string> AdditionalImagePaths { get; set; }= [];
+
+        public int ReytingCount { get; set; } 
     }
 
 

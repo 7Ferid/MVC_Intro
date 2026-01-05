@@ -1018,18 +1018,24 @@ wwwroot\assets\images\website-images\2-3-70x78.png
 wwwroot\assets\images\website-images\2.png
 wwwroot\assets\images\website-images\2242d2ba-07c9-4797-a2a7-0044c5ad8f28Снимок экрана 2025-12-04 210648.png
 wwwroot\assets\images\website-images\3.png
+wwwroot\assets\images\website-images\388d909e-216f-40e5-8dd8-cbed0f5ab376Снимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\45fbdb73-f44c-4269-9ed6-e5c6a416f8ecСнимок экрана 2025-11-24 224516.png
+wwwroot\assets\images\website-images\524fb749-5b4c-421b-b262-515ad128f4f0Снимок экрана 2025-11-24 224516.png
+wwwroot\assets\images\website-images\58c60ec6-e7b8-4d84-8697-2582cd84bdadСнимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\592440ae-b809-41bb-b8bd-f4319fd23f8dСнимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\65ca3638-6550-40f0-b7b0-13b5244ecc38Снимок экрана 2025-11-24 224516.png
+wwwroot\assets\images\website-images\839d57c9-1d35-4730-b576-af244f614168Снимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\8a3fcc6a-73b8-4e99-a51d-e681d98d4ee9Снимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\9079ce0a-07cd-4527-af37-df7eb9ff3331Снимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\9249a331-6a3f-4c84-8054-268bdd967a23Снимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\995bd193-3b07-48d3-a9d5-3aefb7d3162dСнимок экрана 2025-11-24 224516.png
+wwwroot\assets\images\website-images\9ac90e6c-493c-4616-80db-75f24a12989fСнимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\9d6393c9-d5d4-49c0-aa47-206cb309412eСнимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\b2d3fbec-ff2b-45c9-b5b2-855cc88e8e1fСнимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\c439fd27-5405-402a-af59-77c6ce394ae9Снимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\car.png
 wwwroot\assets\images\website-images\card.png
+wwwroot\assets\images\website-images\d65bc633-bc50-4cc4-a46a-13416598378dСнимок экрана 2025-11-24 224516.png
 wwwroot\assets\images\website-images\dark.png
 wwwroot\assets\images\website-images\e11dd9c5-f4ce-4ce0-b993-3d38a15bcbe6Снимок экрана 2025-12-04 210648.png
 wwwroot\assets\images\website-images\f579e550-c2dc-40b8-82b7-675b25f8ecb0Снимок экрана 2025-11-24 224516.png
