@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MVC_Intro.Controllers
 {
-    public class AccountController(UserManager<AppUser> _userManager,SignInManager<AppUser>_signInManager):Controller
+    public class AccountController(UserManager<AppUser> _userManager,SignInManager<AppUser>_signInManager,RoleManager<IdentityRole> _rolemanager ):Controller
     {
         public IActionResult Register()
         {
@@ -48,8 +48,10 @@ namespace MVC_Intro.Controllers
                 return View(vm);
             }
 
+            await _signInManager.SignInAsync(newUser, false);
 
-            return Ok("ok");
+
+            return RedirectToAction("Index","Home");
         }
         [HttpGet]
         public IActionResult Login()
@@ -78,9 +80,9 @@ namespace MVC_Intro.Controllers
                 return View(vm);
             }
 
-            await _signInManager.SignInAsync(user, false);
+            await _signInManager.SignInAsync(user, vm.IsRemember);
 
-            return Ok($"{user.FullName} Welcome");
+            return RedirectToAction("Index", "Home");
 
         }
 
@@ -89,6 +91,26 @@ namespace MVC_Intro.Controllers
         {
             await _signInManager.SignOutAsync();
             return RedirectToAction(nameof(Login));
+        }
+
+        public async Task<IActionResult> CreateRoles()
+        {
+            await _rolemanager.CreateAsync(new IdentityRole()
+            {
+                Name = "User"
+            });
+            await _rolemanager.CreateAsync(new IdentityRole()
+            {
+                Name = "Admin"
+            });
+            await _rolemanager.CreateAsync(new IdentityRole()
+            {
+                Name = "Moderator"
+            });
+            return Ok("Roles created");
+
+
+
         }
 
     }

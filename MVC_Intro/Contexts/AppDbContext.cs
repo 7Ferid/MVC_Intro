@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using MVC_Intro.Models;
+using System.Reflection;
 
 namespace MVC_Intro.Contexts
 {
@@ -11,6 +12,13 @@ namespace MVC_Intro.Contexts
         //    optionsBuilder.UseSqlServer("Server=DESKTOP-G5VLGHT\\SQLEXPRESS;Database=MVCIntroDb;Trusted_Connection=true;TrustServerCertificate=true");
         //    base.OnConfiguring(optionsBuilder);
         //}
+
+        protected override void OnModelCreating(ModelBuilder builder)
+        {
+            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            base.OnModelCreating(builder);
+        }
+
         public AppDbContext(DbContextOptions options) : base(options)
         {
         }

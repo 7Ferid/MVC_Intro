@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using MVC_Intro.Contexts;
 
 namespace MVC_Intro.Controllers
@@ -10,6 +11,7 @@ namespace MVC_Intro.Controllers
         {
             _context = context;
         }
+        [Authorize]
         public IActionResult Index()
         {
             var sliders=_context.Sliders.ToList();

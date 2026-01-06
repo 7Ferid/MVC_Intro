@@ -32,6 +32,10 @@ namespace MVC_Intro
             var app = builder.Build();
             app.UseStaticFiles();
             app.UseRouting();
+
+            app.UseAuthentication();
+            app.UseAuthorization();
+
           
                 app.MapControllerRoute(
                   name: "areas",
