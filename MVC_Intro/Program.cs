@@ -1,6 +1,8 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using MVC_Intro.Abstraction;
 using MVC_Intro.Contexts;
+using MVC_Intro.Services;
 
 namespace MVC_Intro
 {
@@ -10,6 +12,11 @@ namespace MVC_Intro
         {
             var builder = WebApplication.CreateBuilder(args);
             builder.Services.AddControllersWithViews();
+
+
+            builder.Services.AddScoped<IEmailService, EmailService>();
+
+
             builder.Services.AddDbContext<AppDbContext>(option =>
             {
                 option.UseSqlServer(builder.Configuration.GetConnectionString("Default"));

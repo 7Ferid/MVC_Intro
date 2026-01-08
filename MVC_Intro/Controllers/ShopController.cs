@@ -1,11 +1,13 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using MVC_Intro.Abstraction;
 using MVC_Intro.Contexts;
 using MVC_Intro.ViewModels.ProductViewModels;
+using System.Threading.Tasks;
 
 namespace MVC_Intro.Controllers
 {
-    public class ShopController(AppDbContext _context) : Controller
+    public class ShopController(AppDbContext _context,IEmailService _emailService) : Controller
     {
         public async Task<IActionResult> IndexAsync()
         {
@@ -13,6 +15,16 @@ namespace MVC_Intro.Controllers
             return View(products);
         }
      
+        public async Task<IActionResult> Test()
+        {
+            await _emailService.SendEmailAsync("faridgg-mpa101@code.edu.az", "MPA101", "Email service is done");
+
+
+             return Ok("Ok");   
+         }
+
+
+
 
 
         [HttpGet]
