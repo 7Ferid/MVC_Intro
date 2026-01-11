@@ -1,4 +1,12 @@
-﻿
+﻿@using MVC_Intro.Abstraction
+@inject IBasketService _basketService
+@{
+    var basketItems = await _basketService.GetBasketItemsAsync();
+    var totalPrice = basketItems.Sum(x => x.Product.Price * x.Count);
+}
+
+
+
 <!DOCTYPE html>
 <html lang="zxx">
 <head>
@@ -155,7 +163,7 @@
                                         <li class="minicart-wrap me-3 me-lg-0">
                                             <a href="#miniCart" class="minicart-btn toolbar-btn">
                                                 <i class="pe-7s-shopbag"></i>
-                                                <span class="quantity">3</span>
+                                                <span class="quantity">@basketItems.Count</span>
                                             </a>
                                         </li>
                                         <li class="mobile-menu_wrap d-block d-lg-none">
@@ -450,20 +458,47 @@
                                                     type="button"
                                                     id="stickysettingButton"
                                                     data-bs-toggle="dropdown"
-                                                    aria-label="setting"
                                                     aria-expanded="false">
                                                 <i class="pe-7s-users"></i>
                                             </button>
                                             <ul class="dropdown-menu"
                                                 aria-labelledby="stickysettingButton">
-                                                <li>
-                                                    <a class="dropdown-item" href="my-account.html">My account</a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="login-register.html">Login | Register</a>
-                                                </li>
+
+                                                @if (User?.Identity?.IsAuthenticated ?? false)
+                                                {
+                                                    <li>
+                                                        <a class="dropdown-item" href="my-account.html">
+                                                            @User.Identity.Name
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                           asp-action="Logout"
+                                                           asp-controller="Account">
+                                                            Logout
+                                                        </a>
+                                                    </li>
+                                                }
+                                                else
+                                                {
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                           asp-action="Login"
+                                                           asp-controller="Account">
+                                                            Login
+                                                        </a>
+                                                    </li>
+                                                    <li>
+                                                        <a class="dropdown-item"
+                                                           asp-action="Register"
+                                                           asp-controller="Account">
+                                                            Register
+                                                        </a>
+                                                    </li>
+                                                }
                                             </ul>
                                         </li>
+
                                         <li class="d-none d-lg-block">
                                             <a href="wishlist.html">
                                                 <i class="pe-7s-like"></i>
@@ -472,9 +507,10 @@
                                         <li class="minicart-wrap me-3 me-lg-0">
                                             <a href="#miniCart" class="minicart-btn toolbar-btn">
                                                 <i class="pe-7s-shopbag"></i>
-                                                <span class="quantity">3</span>
+                                                <span class="quantity">@basketItems.Count</span>
                                             </a>
                                         </li>
+
                                         <li class="mobile-menu_wrap d-block d-lg-none">
                                             <a href="#mobileMenu"
                                                class="mobile-menu_btn toolbar-btn pl-0">
@@ -833,77 +869,39 @@
                             </a>
                         </div>
                         <ul class="minicart-list">
-                            <li class="minicart-product">
-                                <a class="product-item_remove" href="#">
-                                    <i class="pe-7s-close"
-                                       data-tippy="Remove"
-                                       data-tippy-inertia="true"
-                                       data-tippy-animation="shift-away"
-                                       data-tippy-delay="50"
-                                       data-tippy-arrow="true"
-                                       data-tippy-theme="sharpborder"></i>
-                                </a>
-                                <a href="single-product-variable.html"
-                                   class="product-item_img">
-                                    <img class="img-full"
-                                         src="~/assets/images/product/small-size/2-1-70x78.png"
-                                         alt="Product Image" />
-                                </a>
-                                <div class="product-item_content">
-                                    <a class="product-item_title"
-                                       href="single-product-variable.html">American Marigold</a>
-                                    <span class="product-item_quantity">1 x $23.45</span>
-                                </div>
-                            </li>
-                            <li class="minicart-product">
-                                <a class="product-item_remove" href="#">
-                                    <i class="pe-7s-close"
-                                       data-tippy="Remove"
-                                       data-tippy-inertia="true"
-                                       data-tippy-animation="shift-away"
-                                       data-tippy-delay="50"
-                                       data-tippy-arrow="true"
-                                       data-tippy-theme="sharpborder"></i>
-                                </a>
-                                <a href="single-product-variable.html"
-                                   class="product-item_img">
-                                    <img class="img-full"
-                                         src="~/assets/images/product/small-size/2-2-70x78.png"
-                                         alt="Product Image" />
-                                </a>
-                                <div class="product-item_content">
-                                    <a class="product-item_title"
-                                       href="single-product-variable.html">Black Eyed Susan</a>
-                                    <span class="product-item_quantity">1 x $25.45</span>
-                                </div>
-                            </li>
-                            <li class="minicart-product">
-                                <a class="product-item_remove" href="#">
-                                    <i class="pe-7s-close"
-                                       data-tippy="Remove"
-                                       data-tippy-inertia="true"
-                                       data-tippy-animation="shift-away"
-                                       data-tippy-delay="50"
-                                       data-tippy-arrow="true"
-                                       data-tippy-theme="sharpborder"></i>
-                                </a>
-                                <a href="single-product-variable.html"
-                                   class="product-item_img">
-                                    <img class="img-full"
-                                         src="~/assets/images/product/small-size/2-3-70x78.png"
-                                         alt="Product Image" />
-                                </a>
-                                <div class="product-item_content">
-                                    <a class="product-item_title"
-                                       href="single-product-variable.html">Bleeding Heart</a>
-                                    <span class="product-item_quantity">1 x $30.45</span>
-                                </div>
-                            </li>
+                            @foreach(var item in basketItems)
+                            {
+                                <li class="minicart-product">
+                                    <a class="product-item_remove" asp-action="RemoveFromBasket" asp-controller="Shop" asp-route-productId="@item.ProductId">
+                                        <i class="pe-7s-close"
+                                           data-tippy="Remove"
+                                           data-tippy-inertia="true"
+                                           data-tippy-animation="shift-away"
+                                           data-tippy-delay="50"
+                                           data-tippy-arrow="true"
+                                           data-tippy-theme="sharpborder"></i>
+                                    </a>
+                                    <a href="single-product-variable.html"
+                                       class="product-item_img">
+                                        <img class="img-full"
+                                             src="~/assets/images/website-images/@item.Product.MainImagePath"
+                                             alt="Product Image" />
+                                    </a>
+                                    <div class="product-item_content">
+                                        <a class="product-item_title"
+                                           href="single-product-variable.html">@item.Product.Name</a>
+                                        <span class="product-item_quantity">@item.Count x $ @item.Product.Price</span>
+                                    </div>
+                                </li>
+                            }
+
+                        
+                         
                         </ul>
                     </div>
                     <div class="minicart-item_total">
                         <span>Subtotal</span>
-                        <span class="ammount">$79.35</span>
+                        <span class="ammount">$@totalPrice</span>
                     </div>
                     <div class="group-btn_wrap d-grid gap-2">
                         <a href="cart.html" class="btn btn-dark">View Cart</a>

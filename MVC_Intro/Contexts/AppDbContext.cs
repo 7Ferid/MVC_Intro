@@ -29,6 +29,8 @@ namespace MVC_Intro.Contexts
         public DbSet<Tag> Tags { get; set; }
         public DbSet<ProductTag> ProductTags { get; set; }
 
+        public DbSet<BasketItem> BasketItems { get; set; }
+
 
 
     }

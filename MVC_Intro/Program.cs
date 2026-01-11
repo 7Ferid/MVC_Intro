@@ -15,6 +15,7 @@ namespace MVC_Intro
 
 
             builder.Services.AddScoped<IEmailService, EmailService>();
+            builder.Services.AddScoped<IBasketService, BasketService>();
 
 
             builder.Services.AddDbContext<AppDbContext>(option =>

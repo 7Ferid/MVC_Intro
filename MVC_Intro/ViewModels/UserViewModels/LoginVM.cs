@@ -11,6 +11,8 @@ namespace MVC_Intro.ViewModels.UserViewModels
 
         public bool IsRemember { get; set; }
 
+        public string? ReturnUrl { get; set; }
+
     }
 
 

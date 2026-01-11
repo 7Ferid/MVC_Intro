@@ -100,6 +100,11 @@ namespace MVC_Intro.Controllers
 
             await _signInManager.SignInAsync(user, vm.IsRemember);
 
+
+            if (!string.IsNullOrWhiteSpace(vm.ReturnUrl))
+                return Redirect(vm.ReturnUrl);
+
+
             return RedirectToAction("Index", "Home");
 
         }
