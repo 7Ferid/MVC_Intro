@@ -11,7 +11,7 @@ namespace MVC_Intro.Controllers
         {
             _context = context;
         }
-        [Authorize]
+        //[Authorize]
         public IActionResult Index()
         {
             var sliders=_context.Sliders.ToList();

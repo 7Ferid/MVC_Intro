@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Asus\\Desktop\\MVC_Intro\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj": {}
+    "C:\\Users\\student\\source\\repos\\MVC_Intro_Fix\\MVC_Intro\\MVC_Intro.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Asus\\Desktop\\MVC_Intro\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj": {
+    "C:\\Users\\student\\source\\repos\\MVC_Intro_Fix\\MVC_Intro\\MVC_Intro.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Asus\\Desktop\\MVC_Intro\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj",
+        "projectUniqueName": "C:\\Users\\student\\source\\repos\\MVC_Intro_Fix\\MVC_Intro\\MVC_Intro.csproj",
         "projectName": "MVC_Intro",
-        "projectPath": "C:\\Users\\Asus\\Desktop\\MVC_Intro\\MVC_Intro\\MVC_Intro\\MVC_Intro.csproj",
-        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Asus\\Desktop\\MVC_Intro\\MVC_Intro\\MVC_Intro\\obj\\",
+        "projectPath": "C:\\Users\\student\\source\\repos\\MVC_Intro_Fix\\MVC_Intro\\MVC_Intro.csproj",
+        "packagesPath": "C:\\Users\\student\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\student\\Source\\Repos\\MVC_Intro_Fix\\MVC_Intro\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\student\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -92,7 +92,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

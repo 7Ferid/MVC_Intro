@@ -67,9 +67,10 @@
                                         <td class="product-price">
                                             <span class="amount">basketItem.Product.Price/span>
                                         </td>
-                                        <td class="quantity">
+											<td class="quantity">
+                                                <a asp-action="DecreaseBasketItemCount" asp-controller="Basket" asp-route-productId="@basketItem.ProductId">-</a>
                                                 <div class="cart-plus-minus">
-                                                    <a asp-action=" DecreaseBasketItemCount" asp-controller="Basket" asp-route-productId="@basketItem.ProductId"> -  </a>
+                                                    
                                                 <input class="cart-plus-minus-box"
                                                        value="@basketItem.Count"
                                                        type="text" />
@@ -85,8 +86,8 @@
                                                   
                                                     <i class="fa fa-plus"></i>
                                                     </div>
-                                                    <a asp-action="AddToBasket" asp-controller="Shop" asp-route-prodcutId="@basketItem.ProductId"></a>
-                                            </div>
+
+												</div><a asp-action="AddToBasket" asp-controller="Shop" asp-route-productId="@basketItem.ProductId">+</a>
                                         </td>
                                         <td class="product-subtotal">
                                             <span class="amount">$@(basketItem.Count*basketItem.Product.Price)</span>

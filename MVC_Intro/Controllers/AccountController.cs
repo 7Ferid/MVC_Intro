@@ -63,7 +63,7 @@ namespace MVC_Intro.Controllers
         [HttpGet]
         public IActionResult Login()
         {
-            TempData["ErrorMessage"] = "xeta bas verdi";
+            //TempData["ErrorMessage"] = "xeta bas verdi";
 
             return View();
            

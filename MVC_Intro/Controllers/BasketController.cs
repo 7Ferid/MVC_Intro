@@ -33,7 +33,7 @@ namespace MVC_Intro.Controllers
             if (basketItem.Count > 1)
                 basketItem.Count--;
 
-            _context.BasketItems.Update(basketItem);
+            _context.BasketItems.Update(basketItem);                    
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Index");
